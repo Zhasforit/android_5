@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_vertical"
+    android:stretchColumns="*">
+    <TableRow>
+            <ImageButton
+                android:layout_width="68dp"
+                android:layout_height="63dp"
+                android:contentDescription="@string/marker1_title"
+                android:onClick="onClickButtonMarker"
+                android:scaleType="fitCenter"
+                android:src="@drawable/psu"
+                android:tag="@string/marker1_id"
+                android:text="@string/marker1_title"/>
+
+            <ImageButton
+                android:layout_width="66dp"
+                android:layout_height="63dp"
+                android:contentDescription="@string/marker2_title"
+                android:onClick="onClickButtonMarker"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ineu"
+                android:tag="@string/marker2_id"
+                android:text="@string/marker2_title"/>
+
+            <ImageButton
+                android:layout_width="66dp"
+                android:layout_height="63dp"
+                android:contentDescription="@string/marker4_title"
+                android:onClick="onClickButtonMarker"
+                android:scaleType="fitCenter"
+                android:src="@drawable/house"
+                android:tag="@string/marker4_id"
+                android:text="@string/marker4_title"/>
+    </TableRow>
+
+    <TableRow>
+            <ImageButton
+                android:layout_width="66dp"
+                android:layout_height="63dp"
+                android:contentDescription="@string/marker5_title"
+                android:onClick="onClickButtonMarker"
+                android:scaleType="fitCenter"
+                android:src="@drawable/guliver"
+                android:tag="@string/marker5_id"
+                android:text="@string/marker5_title"/>
+
+            <ImageButton
+                android:layout_width="66dp"
+                android:layout_height="63dp"
+                android:contentDescription="@string/marker6_title"
+                android:onClick="onClickButtonMarker"
+                android:scaleType="fitCenter"
+                android:src="@drawable/bil"
+                android:tag="@string/marker6_id"
+                android:text="@string/marker6_title"/>
+
+            <ImageButton
+                android:layout_width="66dp"
+                android:layout_height="63dp"
+                android:contentDescription="@string/marker7_title"
+                android:onClick="onClickButtonMarker"
+                android:scaleType="fitCenter"
+                android:src="@drawable/kfc"
+                android:tag="@string/marker7_id"
+                android:text="@string/marker7_title"/>
+    </TableRow>
+
+    <TableRow>
+    <Button
+        android:id="@+id/btnTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickTest"
+        android:text="@string/test"/>
+
+    <Button
+        android:id="@+id/btnTest1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickTest1"
+        android:text="@string/test1"/>
+
+    <Button
+        android:id="@+id/btnTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickTest2"
+        android:text="@string/test2"/>
+    </TableRow>
+    <TableRow>
+    <fragment
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:layout_span="3"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="370dp"
+        tools:context="kz.talipovsn.map.MapsActivity"/>
+    </TableRow>
+    <TableRow>
+
+    <Button
+        android:id="@+id/detailButton"
+        android:layout_span="3"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="#f9f9f0"
+        android:onClick="detailButtonClick"
+        android:text="@string/detail"
+        android:textStyle="bold"/>
+    </TableRow>
+    <TableRow>
+
+    <ScrollView
+        android:layout_span="3"
+        android:id="@+id/sv1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4c6"
+        android:gravity="center_vertical|center_horizontal">
+
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:background="#f4f4c6"
+            android:clickable="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textIsSelectable="false"/>
+
+    </ScrollView>
+    </TableRow>
+
+</TableLayout>
